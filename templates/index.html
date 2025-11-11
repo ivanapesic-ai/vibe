@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agent Chatroom</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI Agent Chatroom</h1>
+            <p class="subtitle">Watch AI agents with different personas discuss topics</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Agent Configuration Panel -->
+            <div class="config-panel">
+                <h2>Configure Agents</h2>
+                
+                <div class="agents-list" id="agentsList">
+                    <!-- Agents will be added here dynamically -->
+                </div>
+                
+                <button class="btn btn-add" onclick="addAgent()">+ Add Agent</button>
+                
+                <div class="conversation-controls">
+                    <h3>Start Conversation</h3>
+                    <input type="text" id="topicInput" placeholder="Enter discussion topic..." value="artificial intelligence and its impact on society">
+                    <div class="control-group">
+                        <label>Number of turns:</label>
+                        <input type="number" id="numTurns" min="1" max="20" value="5">
+                    </div>
+                    <button class="btn btn-primary" onclick="startConversation()">🚀 Start Conversation</button>
+                    <button class="btn btn-secondary" onclick="clearConversation()">🗑️ Clear Chat</button>
+                </div>
+            </div>
+
+            <!-- Chat Display -->
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h2>Conversation</h2>
+                    <div class="status" id="status">Ready</div>
+                </div>
+                <div class="chat-messages" id="chatMessages">
+                    <div class="welcome-message">
+                        <h3>👋 Welcome to AI Agent Chatroom!</h3>
+                        <p>Configure your AI agents on the left and start a conversation to watch them interact.</p>
+                        <ul>
+                            <li>Add multiple agents with different providers (OpenAI, Anthropic, Gemini)</li>
+                            <li>Assign different personas (Researcher, Analyst, Creative, etc.)</li>
+                            <li>Choose a topic and watch them discuss</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
