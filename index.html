@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Northwind Creative — Branding Agency</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="logo">Northwind<span>Creative</span></div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="nav-cta" href="#contact">Book a Call</a>
+    </nav>
+    <div class="hero-content">
+      <p class="hero-tagline">We make brands unforgettable.</p>
+      <h1>Build a brand that people can’t stop talking about.</h1>
+      <p class="hero-subtitle">
+        From voice to visuals, Northwind Creative crafts cohesive brand identities
+        that spark connection and drive growth.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#work">View Work</a>
+        <a class="btn secondary" href="#services">Our Services</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>Small team. Big ideas.</h2>
+        <p>
+          We partner with forward-thinking founders and marketing teams to shape
+          brands that feel authentic, polished, and ready for what’s next.
+          Every point of contact is designed with intention.
+        </p>
+        <div class="stats">
+          <div class="stat">
+            <span>120+</span>
+            <p>Brands elevated</p>
+          </div>
+          <div class="stat">
+            <span>9.6/10</span>
+            <p>Client satisfaction</p>
+          </div>
+          <div class="stat">
+            <span>6</span>
+            <p>Countries served</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="section-header">
+        <h2>What we do best</h2>
+        <p>Strategy-led branding solutions designed to launch and scale.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card">
+          <h3>Brand Strategy</h3>
+          <p>
+            Positioning, messaging, and narrative frameworks that align your brand with
+            the customers you want most.
+          </p>
+          <ul>
+            <li>Audience & competitive research</li>
+            <li>Brand voice & story guides</li>
+            <li>Launch roadmaps</li>
+          </ul>
+        </article>
+        <article class="service-card">
+          <h3>Visual Identity</h3>
+          <p>
+            Purpose-built logo systems, typography, and palettes that feel modern and unmistakably yours.
+          </p>
+          <ul>
+            <li>Logos & mark systems</li>
+            <li>Color & type systems</li>
+            <li>Brand asset kits</li>
+          </ul>
+        </article>
+        <article class="service-card">
+          <h3>Digital Experience</h3>
+          <p>
+            Conversion-focused websites, product UI, and digital collateral that keep your brand consistent everywhere.
+          </p>
+          <ul>
+            <li>Marketing websites</li>
+            <li>Product UI design</li>
+            <li>Campaign creative</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="work" class="section work">
+      <div class="section-header">
+        <h2>Selected work</h2>
+        <p>A glimpse at how we transform ideas into lasting impressions.</p>
+      </div>
+      <div class="work-grid">
+        <figure class="work-card">
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80" alt="Brand identity mockup" />
+          <figcaption>Rebrand & Launch — Lumen Labs</figcaption>
+        </figure>
+        <figure class="work-card">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Website redesign" />
+          <figcaption>Digital Experience — Arcadia Markets</figcaption>
+        </figure>
+        <figure class="work-card">
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80" alt="Campaign visuals" />
+          <figcaption>Campaign Creative — Brightside Energy</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section testimonial">
+      <div class="testimonial-card">
+        <p>
+          “Northwind Creative challenged us to dream bigger with our brand. The new identity
+          resonates with our customers and our team in ways we didn’t think were possible.”
+        </p>
+        <span class="author">— Amina Patel, CMO of Cascade</span>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="contact-card">
+        <h2>Let’s build something bold.</h2>
+        <p>Email us at <a href="mailto:hello@northwindcreative.co">hello@northwindcreative.co</a> or start with the form.</p>
+        <form class="contact-form">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-row">
+            <label for="message">Project details</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your brand."></textarea>
+          </div>
+          <button class="btn primary" type="submit">Send inquiry</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Northwind Creative. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const year = document.getElementById("year");
+    if (year) {
+      year.textContent = new Date().getFullYear();
+    }
+  </script>
+</body>
+</html>
