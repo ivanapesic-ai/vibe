@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Agent Chatroom</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>AI Agent Chatroom</h1>
+      <div class="controls">
+        <div class="row">
+          <label>Initial message</label>
+          <input id="initial" placeholder="Start the discussion..." />
+        </div>
+        <div class="row">
+          <label>Rounds</label>
+          <input id="rounds" type="number" value="3" min="1" />
+          <label class="pad-left">Mode</label>
+          <select id="mode">
+            <option value="broadcast">Broadcast (all agents each round)</option>
+            <option value="pairwise">Pairwise (two agents alternate)</option>
+          </select>
+        </div>
+        <div class="agents">
+          <h2>Agents</h2>
+          <div id="agents"></div>
+          <button id="addAgent">+ Add agent</button>
+        </div>
+        <div class="row">
+          <button id="runBtn">Run simulation</button>
+        </div>
+      </div>
+
+      <div class="transcript" id="transcript"></div>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
